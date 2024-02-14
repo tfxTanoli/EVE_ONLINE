@@ -521,3 +521,34 @@ h3 {
   font-size: 1.2rem;
   margin-top: 120px;
 }
+@media (max-width: 768px) {
+  .eve-academy-background-image {
+    height: auto;
+  }
+
+  .eve-academy-buttons .col-md-6 {
+    margin-left: 0;
+  }
+
+  .eve-academy-buttons .col-md-6 button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Adjustments for extra small screens */
+@media (max-width: 576px) {
+  .community-background-image {
+    height: auto;
+  }
+
+  .community-image {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .community-text p {
+    margin-top: 20px;
+  }
+}
