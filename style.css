@@ -262,3 +262,10 @@ Footer_footer__31qkA .Footer_below__Te8-Q .Footer_col__25cQM:nth-child(2) {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.About_about_counter {
+  margin-top: 10px;
+  color: #5ccbcb;
+  font-family: "Shentox", "Rogan", sans-serif;
+  font-size: 2rem;
+  margin-right: 5px;
+}
