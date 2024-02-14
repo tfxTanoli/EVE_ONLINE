@@ -4,6 +4,13 @@
 .navbar {
   z-index: 1;
 }
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
 .background-image {
   z-index: 0;
   background-image: url("images/stars.png");
@@ -187,3 +194,65 @@ p {
   animation: fadeIn 1s ease-in-out 1.5s forwards; /* Apply fade-in animation */
   transition: opacity 0.5s ease-in-out;
 }
+.footer {
+  font-family: "Shentox", "Rogan", sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-between;
+  border-bottom-color: white;
+}
+.footer-title {
+  font-size: 2.5rem;
+}
+.footer-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-icons i {
+  margin-left: 30px;
+  font-size: 2rem;
+  color: lightyellow;
+}
+.bi-discord {
+  margin-right: 10px;
+}
+.footer-languages {
+  background-color: black;
+  color: white;
+}
+.languages i {
+  margin-left: 20px;
+}
+.Footer_col__25cQM {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer_col__25cQM {
+  .footer_lists {
+    margin-top: 10px;
+    font-size: small;
+    color: lightyellow;
+  }
+}
+Footer_footer__31qkA .Footer_below__Te8-Q .Footer_col__25cQM:nth-child(2) {
+  padding-top: 15px;
+}
+/* @media only screen and (min-width: 700px)
+.Footer_footer__31qkA .Footer_below__Te8-Q .Footer_col__25cQM {
+  flex: 1 1 50%;
+} */
+.Footer_footer__31qkA .Footer_below__Te8-Q .Footer_col__25cQM {
+  flex: 1 1 100%;
+  padding-top: 30px;
+}
+.footer-last-section-heading {
+  font-size: small;
+  color: grey;
+}
+/* .Footer_2nd_Column {
+  display: flex;
+} */
