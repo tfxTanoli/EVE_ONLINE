@@ -299,7 +299,7 @@ Footer_footer__31qkA .Footer_below__Te8-Q .Footer_col__25cQM:nth-child(2) {
   width: auto;
   border-radius: 0rem;
   user-select: none;
-  font-family: Shentox, Rogan, "sans-serif";
+  font-family: "Shentox", "Rogan", "sans-serif";
   position: relative;
   text-transform: uppercase;
   border: none;
@@ -358,6 +358,16 @@ Footer_footer__31qkA .Footer_below__Te8-Q .Footer_col__25cQM:nth-child(2) {
   object-fit: contain;
   background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/2AgeXDV34nURIzKuipUJgT/6e0ea9514a5db8dbed1325773b60b044/frontline_caldari.png?fm=webp&w=600&h=679&q=90");
 }
+.rivalry_images {
+  margin-left: 90px;
+}
+.rivalry_images img {
+  width: 70%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   .kbnuPB,
   .fighting-image,
@@ -445,4 +455,44 @@ Footer_footer__31qkA .Footer_below__Te8-Q .Footer_col__25cQM:nth-child(2) {
   .Footer_4th_Column {
     margin-top: 20px;
   }
+}
+.eve-academy-background-image {
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  background-size: cover;
+  background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/7rnGxwxeQy1Ugr2OJTtXL5/c63fe851c557ea795993b27bd40a4714/www-academy-bg.jpg?fm=webp&fit=fill&w=768&h=1000");
+}
+.eve-academy h1,
+h3,
+p {
+  font-family: "Shentox", "Rogan", "sans-serif";
+}
+.eve-academy p {
+  font-size: 1.5rem;
+}
+.eve-academy h1,
+h3 {
+  margin-left: 10px;
+}
+.eve-academy h1 {
+  font-size: 3rem;
+}
+
+.eve-academy-buttons .col-md-6 button {
+  margin-top: 10px;
+  width: 300px;
+  height: 70px;
+  margin-left: 15px;
+  background-color: #f1f1f1;
+  color: black;
+  font-family: "Shentox", "Rogan", "sans-serif";
+  font-weight: bold;
+}
+.eve-academy-buttons .col-md-6 button i {
+  font-family: "Shentox", "Rogan", "sans-serif";
+  font-size: larger;
+  color: darkorchid;
+  margin-left: 100px;
 }
