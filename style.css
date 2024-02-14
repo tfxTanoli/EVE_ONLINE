@@ -1,5 +1,6 @@
 * {
   font-family: "Shentox", "Rogan", sans-serif;
+  overflow-x: hidden;
 }
 .navbar {
   z-index: 1;
@@ -14,8 +15,7 @@ a {
 .background-image {
   z-index: 0;
   background-image: url("images/stars.png");
-  background-size: 100vw auto; /* Set width to 100% of viewport width and height auto */
-  /* Prevent background image from repeating */
+  background-size: 100vw auto;
 }
 .Vanguard_inner__7eVoB .Vanguard_image__1Dq6a {
   display: flex;
@@ -25,18 +25,18 @@ a {
 #bg-2 {
   z-index: 0;
   background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/1LLLhAiEriJe4WFY8tmwvZ/249a031894077fb0c61a45c8a260b2a5/havoc_www_bg3.jpg?w=1100&q=75&fm=webp");
-  background-size: 100vw auto; /* Set width to 100% of viewport width and height auto */
-  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
 }
 #bg-3 {
   z-index: 0;
   background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/5MQyeil0qIOh75HWmSPYLx/00cd75ecc617614651941b27ad16713f/eve_vanguard_section_trans.png?w=1100&q=75&fm=webp");
-  background-size: 100vw auto; /* Set width to 100% of viewport width and height auto */
-  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
 }
 .hero-section {
   display: flex;
-  justify-content: center; /* Align items to the start of the flex container */
+  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   color: white;
@@ -77,10 +77,14 @@ h6 {
 i {
   color: lightseagreen;
 }
+.download,
+.support {
+  cursor: pointer;
+}
 .omega-button {
   color: black;
   margin-left: 20px;
-  width: 165px;
+  width: 185px;
   height: 65px;
   border: transparent;
 }
@@ -99,20 +103,19 @@ p {
 .stars-image {
   margin-top: 150px;
 }
-/* Style for the announcement section */
 .announcement {
-  width: 390px; /* Adjust width as needed */
-  height: auto; /* Allow height to adjust based on content */
-  background-color: #ffffff; /* White background color */
-  display: flex; /* Use flexbox layout */
-  padding: 20px; /* Add padding for spacing */
-  border-radius: 10px; /* Add rounded corners for a modern look */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  width: 390px;
+  height: auto;
+  background-color: #ffffff;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 70px;
   margin-left: 190px;
-  opacity: 0; /* Initially hide the announcement */
-  animation: fadeIn 0.5s ease-in-out 1.5s forwards; /* Apply the fadeIn animation with a delay of 2 seconds */
-  transition: opacity 0.5s ease-in-out; /* Apply smooth transition for opacity */
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out 1.5s forwards;
+  transition: opacity 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -124,41 +127,49 @@ p {
   }
 }
 
-/* Style for the text content within the announcement */
 .Announcement_content__26M8s {
-  flex: 1; /* Allow text content to grow to fill available space */
-  color: #333333; /* Dark text color */
+  flex: 1;
+  color: #333333;
 }
 
-/* Style for the headline */
 .Announcement_headline__1NWuO {
-  font-size: 20px; /* Larger font size for headline */
-  margin-bottom: 10px; /* Add spacing below the headline */
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-/* Style for the teaser text */
 .Announcement_teaser__qQGqx {
-  font-size: 16px; /* Smaller font size for teaser text */
+  font-size: 16px;
 }
 
-/* Style for the button */
 .Announcement_button__1yilG {
-  margin-top: 10px; /* Add spacing above the button */
+  margin-top: 10px;
 }
 
-/* Style for the image container */
 .havoc-image {
-  display: flex; /* Use flexbox layout */
-  align-items: center; /* Center the image vertically */
-  margin-left: 20px; /* Add spacing between text and image */
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
-/* Style for the image */
 .havoc-image img {
-  width: 130px; /* Set the width of the image */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Add rounded corners for a modern look */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  width: 130px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 768px) {
+  .havoc-image {
+    margin-right: 10px;
+  }
+
+  .havoc-image img {
+    width: 100px;
+  }
+}
+@media (max-width: 576px) {
+  .havoc-image {
+    display: none;
+  }
 }
 .bi-arrow-down-circle-fill {
   margin-left: 15px;
@@ -172,9 +183,9 @@ p {
   color: white;
 }
 .platforms_icons i {
-  opacity: 0; /* Initially hide icons */
-  animation: fadeIn 1s ease-in-out 1.5s forwards; /* Apply fade-in animation */
-  transition: opacity 0.5s ease-in-out; /* Apply transition */
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1.5s forwards;
+  transition: opacity 0.5s ease-in-out;
 }
 @keyframes platformsFadeIn {
   0% {
@@ -190,8 +201,8 @@ p {
 }
 .pc-gamer-image {
   height: 90px;
-  opacity: 0; /* Initially hide icons */
-  animation: fadeIn 1s ease-in-out 1.5s forwards; /* Apply fade-in animation */
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1.5s forwards;
   transition: opacity 0.5s ease-in-out;
 }
 .footer {
@@ -268,4 +279,170 @@ Footer_footer__31qkA .Footer_below__Te8-Q .Footer_col__25cQM:nth-child(2) {
   font-family: "Shentox", "Rogan", sans-serif;
   font-size: 2rem;
   margin-right: 5px;
+}
+.content {
+  text-align: center;
+  font-family: "Shentox", "Rogan", sans-serif;
+}
+.content-heading {
+  color: white;
+}
+.content-text {
+  color: white;
+  font-size: small;
+}
+.mantine-86psgv {
+  appearance: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  width: auto;
+  border-radius: 0rem;
+  user-select: none;
+  font-family: Shentox, Rogan, "sans-serif";
+  position: relative;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 30px;
+  height: 60px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  min-width: 220px;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  line-height: normal;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out 0s;
+  clip-path: none;
+}
+.factionLogo {
+  display: flex;
+}
+.kbnuPB {
+  width: 400px;
+  height: 350px;
+  background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/1EEY4yhD4mQjAwZYxa5ThR/64bd39c3dd4d24c8c43730234ae94ac5/frontline_amarr.png?fm=webp&w=600&h=679&q=90");
+  background-size: cover;
+  object-fit: contain;
+}
+.Gkmbt {
+  margin-left: 15px;
+  width: 400px;
+  height: 350px;
+  background-size: cover;
+  object-fit: contain;
+  background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/3CW0IU0wDTQ34RvNOPNIlH/80d0c5bfd55d2b53dfa0815a9883d003/frontline_minmatar.png?fm=webp&w=600&h=679&q=90");
+}
+.Gallente {
+  margin-left: 45px;
+  width: 400px;
+  height: 350px;
+  background-size: cover;
+  object-fit: contain;
+  background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/77CbVCce0WAUxHQRf6GcAj/1396ab825acf441e49c053bb3b6bda10/Frontlines-gallente-portrait.png?fm=webp&w=600&h=679&q=90");
+}
+.Caldari {
+  margin-left: 15px;
+  width: 400px;
+  height: 350px;
+  background-size: cover;
+  object-fit: contain;
+  background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/2AgeXDV34nURIzKuipUJgT/6e0ea9514a5db8dbed1325773b60b044/frontline_caldari.png?fm=webp&w=600&h=679&q=90");
+}
+@media only screen and (max-width: 768px) {
+  .kbnuPB,
+  .fighting-image,
+  .Gkmbt,
+  .Gallente,
+  .Caldari,
+  .factionLogo svg {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    flex-basis: auto;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .navbar-nav {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+}
+@media (min-width: 576px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-section {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-section {
+    padding-top: 250px;
+  }
+}
+.hero_video__1Y5hn {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero_video__1Y5hn video {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .About_about-icons .col-md-3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .About_about-icons .col-md-3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .Footer_2nd_Column,
+  .Footer_3rd_Column,
+  .Footer_4th_Column {
+    margin-top: 20px;
+  }
 }
