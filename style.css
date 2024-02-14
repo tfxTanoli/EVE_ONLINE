@@ -253,6 +253,12 @@ Footer_footer__31qkA .Footer_below__Te8-Q .Footer_col__25cQM:nth-child(2) {
   font-size: small;
   color: grey;
 }
-/* .Footer_2nd_Column {
+.About_about i {
+  font-size: 5rem;
+  color: grey;
+}
+.About_about-icons {
   display: flex;
-} */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
