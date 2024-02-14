@@ -1,7 +1,189 @@
-/* #img {
-  width: 200px;
-  height: 100px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: contain;
-} */
+* {
+  font-family: "Shentox", "Rogan", sans-serif;
+}
+.navbar {
+  z-index: 1;
+}
+.background-image {
+  z-index: 0;
+  background-image: url("images/stars.png");
+  background-size: 100vw auto; /* Set width to 100% of viewport width and height auto */
+  /* Prevent background image from repeating */
+}
+.Vanguard_inner__7eVoB .Vanguard_image__1Dq6a {
+  display: flex;
+  justify-content: right;
+  order: 1;
+}
+#bg-2 {
+  z-index: 0;
+  background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/1LLLhAiEriJe4WFY8tmwvZ/249a031894077fb0c61a45c8a260b2a5/havoc_www_bg3.jpg?w=1100&q=75&fm=webp");
+  background-size: 100vw auto; /* Set width to 100% of viewport width and height auto */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+#bg-3 {
+  z-index: 0;
+  background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/5MQyeil0qIOh75HWmSPYLx/00cd75ecc617614651941b27ad16713f/eve_vanguard_section_trans.png?w=1100&q=75&fm=webp");
+  background-size: 100vw auto; /* Set width to 100% of viewport width and height auto */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+.hero-section {
+  display: flex;
+  justify-content: center; /* Align items to the start of the flex container */
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  font-weight: bolder;
+}
+.hero-heading {
+  margin-left: 5px;
+  font-size: 3rem;
+}
+h6 {
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  color: black;
+  margin-left: 10px;
+  width: 400px;
+  height: 80px;
+}
+.buttons button {
+  background-color: #5ccbcb;
+  width: 170px;
+  height: 65px;
+  font-weight: bold;
+}
+.play-free-button {
+  border: transparent;
+}
+.play-free-button:hover {
+  border: 3px solid white;
+}
+.buttons i {
+  color: black;
+}
+i {
+  color: lightseagreen;
+}
+.omega-button {
+  color: black;
+  margin-left: 20px;
+  width: 165px;
+  height: 65px;
+  border: transparent;
+}
+.omega-button button {
+  background-color: white;
+  color: black;
+}
+.omega-button button:hover {
+  border: 3px solid black;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  margin-left: 15px;
+}
+.stars-image {
+  margin-top: 150px;
+}
+/* Style for the announcement section */
+.announcement {
+  width: 390px; /* Adjust width as needed */
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #ffffff; /* White background color */
+  display: flex; /* Use flexbox layout */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Add rounded corners for a modern look */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  margin-top: 70px;
+  margin-left: 190px;
+  opacity: 0; /* Initially hide the announcement */
+  animation: fadeIn 0.5s ease-in-out 1.5s forwards; /* Apply the fadeIn animation with a delay of 2 seconds */
+  transition: opacity 0.5s ease-in-out; /* Apply smooth transition for opacity */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style for the text content within the announcement */
+.Announcement_content__26M8s {
+  flex: 1; /* Allow text content to grow to fill available space */
+  color: #333333; /* Dark text color */
+}
+
+/* Style for the headline */
+.Announcement_headline__1NWuO {
+  font-size: 20px; /* Larger font size for headline */
+  margin-bottom: 10px; /* Add spacing below the headline */
+}
+
+/* Style for the teaser text */
+.Announcement_teaser__qQGqx {
+  font-size: 16px; /* Smaller font size for teaser text */
+}
+
+/* Style for the button */
+.Announcement_button__1yilG {
+  margin-top: 10px; /* Add spacing above the button */
+}
+
+/* Style for the image container */
+.havoc-image {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center the image vertically */
+  margin-left: 20px; /* Add spacing between text and image */
+}
+
+/* Style for the image */
+.havoc-image img {
+  width: 130px; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners for a modern look */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+.bi-arrow-down-circle-fill {
+  margin-left: 15px;
+  font-size: 2rem;
+  color: white;
+}
+.bi-play-fill {
+  margin-left: 15px;
+  padding: 5px;
+  font-size: 2rem;
+  color: white;
+}
+.platforms_icons i {
+  opacity: 0; /* Initially hide icons */
+  animation: fadeIn 1s ease-in-out 1.5s forwards; /* Apply fade-in animation */
+  transition: opacity 0.5s ease-in-out; /* Apply transition */
+}
+@keyframes platformsFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.EVE-text p {
+  font-family: "Shentox", "Rogan", sans-serif;
+  font-size: 2.1rem;
+}
+.pc-gamer-image {
+  height: 90px;
+  opacity: 0; /* Initially hide icons */
+  animation: fadeIn 1s ease-in-out 1.5s forwards; /* Apply fade-in animation */
+  transition: opacity 0.5s ease-in-out;
+}
