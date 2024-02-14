@@ -484,7 +484,7 @@ h3 {
   margin-top: 10px;
   width: 300px;
   height: 70px;
-  margin-left: 15px;
+  margin-left: 50px;
   background-color: #f1f1f1;
   color: black;
   font-family: "Shentox", "Rogan", "sans-serif";
@@ -495,4 +495,29 @@ h3 {
   font-size: larger;
   color: darkorchid;
   margin-left: 100px;
+}
+.community-background-image {
+  width: 100%;
+  height: 900px;
+  overflow-y: hidden;
+  background-size: cover;
+  background-image: url("/EVE CLONE/images/stars.png");
+  object-fit: contain;
+}
+.community-image {
+  padding-left: 15px;
+  margin-left: 20px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url("https://images.ctfassets.net/7lhcm73ukv5p/7pCtyBLTPMaYANK5Kx1r0p/55a94d83b297de4cf14f37ccb3016bda/www_community_collage.jpg?w=1440");
+  object-fit: contain;
+}
+.community-text {
+  background-color: black;
+}
+.community-text p {
+  font-family: "Shentox", "Rogan", "sans-serif";
+  font-size: 1.2rem;
+  margin-top: 120px;
 }
